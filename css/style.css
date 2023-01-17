@@ -1,0 +1,280 @@
+/* цвета */
+:root{
+    --blue: #1698D9;
+    --blue__selected: #2EA8E6;
+    --pink: #D91667;
+    --pink__selected: #E52E7A;
+    --grey: #B3B3B3;
+    --yellow: #FFFF66;
+}
+
+@font-face {
+    font-family: 'Exo2.0';
+    src: url(/css/fonts/Exo2.0-Thin.otf);  /* шрифт заголовка */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('/css/Pattern.png');
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.header{    
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+}
+.header__text{
+    font-family: 'Exo2.0';
+    color: white;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 100;
+}
+
+
+/* ---- КАРТОЧКА ---- */
+
+/* Карточка товара */
+.cards{
+    margin-top: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 324px);
+    grid-auto-rows: auto;
+    gap: 0px 80px;
+}
+.card{
+    width: 324px;
+    height: 509px;
+    color: white;
+}
+
+.card__bg{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    color: #666666;
+    background-color: white;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    border-radius: 12px;
+    background-image: url('/css/Photo.png');
+    background-position-y:bottom;
+    background-repeat: no-repeat;
+}
+
+
+/* текст карточки */
+
+.content{
+    font-family: 'Trebuchet MS';
+    width: 300px;
+    height: 480px;
+    margin-top: 20px;
+    margin-left: 50px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.portion{
+    background-color: var(--grey);
+    word-wrap: break-word;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 215px;
+    top: 375px;
+}
+.portion h1{
+    margin-top: 5px;
+}
+.portion h2{
+    margin-top: -5px;
+    font-weight: 100;
+}
+.title{
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+}
+.flavor{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+}
+.number{
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+.card__buy{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.card__buy a{
+    text-decoration: dashed underline;
+}
+
+.card__disabled{
+    mix-blend-mode: overlay;
+}
+
+/* ----  ЦВЕТА ---- */
+
+/* рамки */
+.blue__border{
+    position: relative;
+    width: 324px;
+    height: 484px;
+    border-radius: 15px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    background-color: var(--blue);
+}
+.blue__selected__border{
+    position: relative;
+    width: 324px;
+    height: 484px;
+    border-radius: 15px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    background-color: var(--blue__selected);
+    transition-duration: 4s;
+}
+.pink__border{
+    position: relative;
+    width: 324px;
+    height: 484px;
+    border-radius: 15px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    background-color: var(--pink);
+}
+.pink__selected__border{
+    position: relative;
+    width: 324px;
+    height: 484px;
+    border-radius: 15px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    background-color: var(--pink__selected);
+}
+.grey__border{
+    position: relative;
+    width: 324px;
+    height: 484px;
+    border-radius: 15px;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
+    background-color: var(--grey);
+}
+
+
+/* порции */
+.blue__portion{
+    background-color: var(--blue);
+}
+.blue__selected__portion{
+    background-color: var(--blue__selected);
+}
+.pink__portion{
+    background-color: var(--pink);
+}
+.pink__selected__portion{
+    background-color: var(--pink__selected);
+}
+
+
+/* купить */
+.blue__buy{
+    color: var(--blue);
+}
+.blue__selected__buy{
+    color: var(--blue__selected);
+}
+.pink__buy{
+    color: var(--pink);
+}
+.pink__selected__buy{
+    color: var(--pink__selected);
+}
+.text__disabled{
+    color: var(--grey);
+}
+.yellow__buy{
+    color: var(--yellow)
+}
+
+
+/* планшетная и мобильная версии */
+
+
+@media screen and (max-width: 1100px){
+    .container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+        overflow-y: scroll;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 324px);
+        gap: 40px 80px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .container{
+        overflow-y: scroll;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 324px);
+        gap: 40px 80px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .header__text{
+        font-size: 20px;
+    }
+    .container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

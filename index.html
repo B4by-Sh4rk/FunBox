@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunBox</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1 class="header__text">Ты сегодня покормил кота?</h1>
+        </div>
+        <div class="cards">
+            <div id="card__1" class="card" onclick="card__click(event.currentTarget)">
+                <div class="blue__border">
+                    <div class="card__bg">
+                    <div class="content">
+                    <p>Сказочное заморское яство</p>
+                    <h1 class="title">Нямушка</h1>
+                    <h3 class="flavor">с фуа-гра</h3>
+                    <p class="number">10 порций<br>
+                        мышь в подарок</p>
+                        <div class="portion blue__portion"><h1>0,5</h1><h2>кг</h2></div>
+                    </div>
+                </div></div>
+                <p class="card__buy card__buy__1">Чего сидишь? Порадуй котэ, <a class="blue__buy">купи</a>.</p>
+            </div>
+            <div id="card__2" class="card" onclick="card__click(event.currentTarget)">
+                <div class="pink__border">
+                    <div class="card__bg">
+                    <div class="content">
+                    <p>Сказочное заморское яство</p>
+                    <h1 class="title">Нямушка</h1>
+                    <h3 class="flavor">с рыбой</h3>
+                    <p class="number">40 порций<br>
+                        2 мыши в подарок</p>
+                        <div class="portion pink__portion"><h1>2</h1><h2>кг</h2></div>
+                    </div>
+                </div></div>
+                <p class="card__buy card__buy__2">Чего сидишь? Порадуй котэ, <a class="pink__buy">купи</a>.</p>
+            </div>
+            <div id="card__3" class="card" onclick="card__click(event.currentTarget)">
+                <div class="grey__border">
+                    <div class="card__bg text__disabled card__disabled">
+                    <div class="content">
+                    <p>Сказочное заморское яство</p>
+                    <h1 class="title text__disabled">Нямушка</h1>
+                    <h3 class="flavor text__disabled">с курой</h3>
+                    <p class="number text__disabled">100 порций<br>
+                        5 мышей в подарок<br>
+                        заказчик доволен</p>
+                        <div class="portion grey__portion"><h1>5</h1><h2>кг</h2></div>
+                    </div>
+                </div></div>
+                <p class="card__buy card__buy__3 yellow__buy">Печалька, с курой закончился.</p>
+            </div>
+            
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
