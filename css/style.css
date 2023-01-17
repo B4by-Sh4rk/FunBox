@@ -170,7 +170,6 @@ body{
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%, 12% 0);
     background-color: var(--blue__selected);
-    transition-duration: 4s;
 }
 .pink__border{
     position: relative;
