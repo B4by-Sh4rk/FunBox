@@ -1,2 +1,2 @@
 # FunBox
- tz
+https://b4by-sh4rk.github.io/FunBox/
